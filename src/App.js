@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 function App() {
   const [posts,setpost]=useState([])
   useEffect(()=>{
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('https://jsonplaceholder.typicode.com/posts')//taken this from json placeholder
       .then(response => response.json())
       .then(posts =>setpost(posts.splice(0,10)))},[])
   
